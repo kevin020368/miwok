@@ -8,18 +8,21 @@ public class Word {
     private int mSourceAudio;
 
 
+
     //constructor
     public Word(String defaultTranslation, String miwok, int sourceImage, int sourceAudio) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwok;
         mSourceImage = sourceImage;
         mSourceAudio = sourceAudio;
+
     }
 
     //constructor without image
-    public Word(String defaultTranslation, String miwok) {
+    public Word(String defaultTranslation, String miwok, int sourceAudio) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwok;
+        mSourceAudio = sourceAudio;
     }
 
     public String getDefaultTranslation() {
@@ -36,5 +39,6 @@ public class Word {
         return mSourceImage != NO_IMAGE_PROVIDED;
     }
 
-    public int getSourceAudio(){ return mSourceAudio; }
+    public int getSourceAudio() { return mSourceAudio; }
+
 }
