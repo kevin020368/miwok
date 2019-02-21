@@ -76,11 +76,6 @@ public class WordAdapter extends ArrayAdapter<Word> {
         //set the background color of the textContainer view
         textContainer.setBackgroundColor(color);
 
-        //how to call a instance variable form other class to build a clickListener
-
-
-
-
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView
         return listItemView;
